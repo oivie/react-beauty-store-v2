@@ -8,6 +8,7 @@ import {
 import Main from './Main';
 import Catalogue from './Catalogue';
 import About from './About';
+import Footer from './Footer';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
         </Routes>
       </Router>
 
-      <Main />
+      <Footer />
+
     </div>
   );
 }

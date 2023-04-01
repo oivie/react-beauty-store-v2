@@ -97,18 +97,22 @@ h3 {
 /* --------newInn------- */
 .newInn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
-  flex-direction: column;
   margin: 5vh;
 }
 
+.newInnContainer {
+  display: flex;
+  flex-direction: column;
+}
 
 .moreLessBtn {
   padding: 2px;
   background-color: #ffff;
   border: none;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 2vh;
 }
 
 .newInnTxt {
@@ -120,6 +124,12 @@ h3 {
 
 .h3Inn {
   color: #2D2D2D;
+}
+
+.newInnImg {
+  height: 28vh;
+  width: 24vh;
+  border-radius: 5px;
 }
 
 /* --------footer------- */
@@ -143,10 +153,104 @@ h3 {
   padding: 1vh;
 }
 
-/* --------footer------- */
 .h1About {
   color: #2D2D2D;
+  font-family: 'Poppins', sans-serif;
+
 }
 
+/* --------about us------ */
+.containerMainAbout {
+  background-color: #F8EEE4;
+  padding: 3vh;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: auto;
+}
 
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffff;
+  padding: 6vh;
+}
+
+.aboutUsTxt {
+  font-size: 2.3vh;
+}
+
+.h1AboutUs {
+  color: #2D2D2D;
+  font-size: 6vh;
+}
+
+.imgAbout {
+  width: 32vh;
+  border-radius: 40px;
+  margin: 5vh;
+}
+
+.imgAboutSm {
+  border-radius: 100px;
+  margin-left: 5vh;
+  width: 17vh;
+  height: 24vh;
+}
+
+/* --------catlogue------ */
+.btnOne {
+  padding: 0.6vh;
+  border-radius: 25px;
+  width: 12vh;
+  margin: 0.5vh;
+  border: 1px black;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8EEE4;
+}
+
+.btnOne:hover {
+  transition: all .6s ease-in;
+  background-color: #EEC8C8;
+}
+
+.h1Cat {
+  color: #2D2D2D;
+  margin-top: 3vh;
+  font-size: 5vh;
+}
+
+.imgCat {
+  border-radius: 5px;
+}
+
+.hash {
+  font-style: italic;
+  color: #EEC8C8;
+}
+
+.txtCat {
+  font-weight: bold;
+  font-size: large;
+}
+
+.price {
+  color: #384837;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.containerMainCat {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerCat {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
 

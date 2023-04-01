@@ -40,8 +40,6 @@ function Main() {
 
             {/* page three */}
             <NewInn />
-
-            <Footer />
             </div>
             
         // </div>

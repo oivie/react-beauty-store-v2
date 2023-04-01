@@ -6,7 +6,7 @@ import ImageNew2 from './img/newin3.jpg';
 export const dataNew = [
     {
         id: 1,
-        images: { ImageNew0 },
+        images: ImageNew0,
         name: 'Innovative Serum',
         showMore: false,
         description: 
@@ -15,7 +15,7 @@ export const dataNew = [
 
     {
         id: 2,
-        image: { ImageNew1 },
+        images: ImageNew1,
         name: 'Peeling & Tonic',
         showMore: false,
         description: 
@@ -24,7 +24,7 @@ export const dataNew = [
 
     {
         id: 3,
-        image: { ImageNew2 },
+        images: ImageNew2,
         name: 'Rose Water',
         showMore: false,
         description: 
