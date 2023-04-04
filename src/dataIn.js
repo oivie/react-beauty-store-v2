@@ -10,7 +10,7 @@ export const dataNew = [
         name: 'Innovative Serum',
         showMore: false,
         description: 
-        'All-natural serum for all skin types. Ingredients include camomile extract, natural retinol and collagen for a best results.',
+        'Natural serum for all skin types. Ingredients include camomile extract, natural retinol and collagen for a best results. Can be used for dry, normal and aging skin',
     },
 
     {
@@ -19,7 +19,7 @@ export const dataNew = [
         name: 'Peeling & Tonic',
         showMore: false,
         description: 
-        'Duo combo for a best results. With rosemary extract to sooth and refresh skin!',
+        'Duo combo of peeling and tonic for the best results. With rosemary extract to sooth and refresh skin! Used for any skin types, do not use with retinols.',
     },
 
     {
@@ -28,7 +28,7 @@ export const dataNew = [
         name: 'Rose Water',
         showMore: false,
         description: 
-        'For a fresh and natural moisture. Comes from a locally sourced roses.',
+        'For a fresh and natural moisture. Comes from a locally sourced roses and thermal water. Perfect for any skin types, provides ligth hydration.',
     },
 
 ]

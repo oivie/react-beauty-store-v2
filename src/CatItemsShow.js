@@ -1,7 +1,7 @@
 function CatItemsShow({ anyItem }) {
 
     return (
-        <div className="">
+        <div className="containerCatalogue">
             { anyItem.map(( element => {
                 const { id, name, info ,searchTern, price, image } = element;
             

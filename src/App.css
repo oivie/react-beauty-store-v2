@@ -49,7 +49,9 @@ h3 {
   font-size: 2vh;
   color: #ffff;
   font-family: 'Poppins', sans-serif;
-
+  text-decoration: none;
+  background-color: #384837;
+  border: none;
 }
 
 .link {
@@ -61,26 +63,29 @@ h3 {
 
 
 /* --------Green cont------- */
+.containerMainGreen {
+  display: flex;
+  flex-direction: column;
+}
+
 .greenSpace {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	align-items: center;
-	align-content: center;
   margin: 5vh;
-  width: 100%;
+  width: 90%;
   padding: 3vh;
   background-color: #384837;
   border-radius: 60px;
 }
 
 .greenTxt {
-	/* display: flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center; */
+	align-items: center;
 }
 
 .greenWriting {
@@ -105,6 +110,7 @@ h3 {
 .newInnContainer {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .moreLessBtn {
@@ -113,6 +119,7 @@ h3 {
   border: none;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2vh;
+  color: #384837;
 }
 
 .newInnTxt {
@@ -163,23 +170,24 @@ h3 {
 .containerMainAbout {
   background-color: #F8EEE4;
   padding: 3vh;
-  display: flex;
-  justify-content: flex-start;
+  /* position: relative; */
   height: 100%;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .containerAbout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   background-color: #ffff;
   padding: 6vh;
+  width: auto;
 }
 
 .aboutUsTxt {
   font-size: 2.3vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .h1AboutUs {
@@ -190,7 +198,7 @@ h3 {
 .imgAbout {
   width: 32vh;
   border-radius: 40px;
-  margin: 5vh;
+  padding: 2vh;
 }
 
 .imgAboutSm {
@@ -198,6 +206,26 @@ h3 {
   margin-left: 5vh;
   width: 17vh;
   height: 24vh;
+
+}
+
+.box1 {
+  display: flex;
+}
+
+@media all and (max-width: 900px) {
+  .containerMainAbout {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutUsTxt {
+    order: 0;
+  }
+
+  .imgAbout {
+    display: none;
+  }
 }
 
 /* --------catlogue------ */
@@ -245,12 +273,20 @@ h3 {
 .containerMainCat {
   display: flex;
   flex-direction: column;
+  margin: 1.5vh;
+  margin-bottom: 1vh;
 }
 
 .containerCat {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
 }
+
+.containerCatalogue {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4vh;
+}
+
 

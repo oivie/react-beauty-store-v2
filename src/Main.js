@@ -20,7 +20,7 @@ function Main() {
             </div>
             
             {/* page two */}
-            <div className='containerMain'>
+            <div className='containerMainGreen'>
                 <div className='greenSpace'>
                     <div className='greenTxt'>
                         <img src={ vs } alt='visual' className='imgVs' />
@@ -31,7 +31,7 @@ function Main() {
                             <h3>About Us</h3>
                             <h1 className='extraBigTxt'>DISCOVER YOUR BEST SKIN YET</h1>
                             <p className='greenWriting'>Our company is a natural cosmetics brand that is committed to using only the finest natural ingredients in our products. We specialize in serums and oils that are designed to nourish and enhance your skin's natural beauty. We also offer multi-purpose creams that provide all-around skincare benefits.</p>
-                            <p className='goTo'>GO TO CATALOGUE </p>
+                            <button className='goTo' >GO TO CATALOGUE </button>
                             {/* <link>GO TO CATALOGUE</link> */}
                         </div>
                     </div>
