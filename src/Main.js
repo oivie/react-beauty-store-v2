@@ -1,7 +1,8 @@
 import './App.css';
 import Footer from './Footer';
-import imageMain from './img/main.jpg'
-import vs from './img/vs.png'
+import imageMain from './img/main.jpg';
+import vs from './img/vs.png';
+import longImg from './img/111.jpg';
 import NewInn from './NewInn';
 
 
@@ -22,19 +23,15 @@ function Main() {
             {/* page two */}
             <div className='containerMainGreen'>
                 <div className='greenSpace'>
-                    <div className='greenTxt'>
-                        <img src={ vs } alt='visual' className='imgVs' />
-                    </div>
-                    
-                    <div className='greenTxt'>
-                        <div>
+
+                        <img src={ longImg } alt='visual' className='imgVs' />
+
                             <h3>About Us</h3>
                             <h1 className='extraBigTxt'>DISCOVER YOUR BEST SKIN YET</h1>
                             <p className='greenWriting'>Our company is a natural cosmetics brand that is committed to using only the finest natural ingredients in our products. We specialize in serums and oils that are designed to nourish and enhance your skin's natural beauty. We also offer multi-purpose creams that provide all-around skincare benefits.</p>
-                            <button className='goTo' >GO TO CATALOGUE </button>
+                            {/* <button className='goTo' >GO TO CATALOGUE </button> */}
                             {/* <link>GO TO CATALOGUE</link> */}
-                        </div>
-                    </div>
+
                 </div>
             </div>
 

@@ -64,28 +64,24 @@ h3 {
 
 /* --------Green cont------- */
 .containerMainGreen {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-around;
 }
 
 .greenSpace {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
   margin: 5vh;
   width: 90%;
   padding: 3vh;
   background-color: #384837;
   border-radius: 60px;
-}
-
-.greenTxt {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
 .greenWriting {
@@ -95,8 +91,8 @@ h3 {
 
 /* --------imgs------- */
 .imgVs {
-  height: 10%;
-  margin-right: 6vh;
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* --------newInn------- */
@@ -226,6 +222,8 @@ h3 {
   .imgAbout {
     display: none;
   }
+
+
 }
 
 /* --------catlogue------ */
