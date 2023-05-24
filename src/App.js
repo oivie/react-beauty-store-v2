@@ -28,7 +28,7 @@ function App() {
         </Routes>
       </Router>
 
-      <Main />
+      
 
       <Footer />
 
