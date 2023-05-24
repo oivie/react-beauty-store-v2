@@ -8,7 +8,7 @@ body {
   text-transform: uppercase;
   padding: 0.8vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .containerMain {
