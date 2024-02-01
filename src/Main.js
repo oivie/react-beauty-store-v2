@@ -7,7 +7,6 @@ import longImg from './img/116.png';
 import NewInn from './NewInn';
 
 function Main() {
-    // Create refs for the elements  to animate
     const imageRef = useRef(null);
     const bannerRef = useRef(null);
 
@@ -42,7 +41,7 @@ function Main() {
             {/* page two */}
             <div className='containerMainGreen'>
                 <div className='greenSpace'>
-                    <img src={longImg} alt='visual' className='imgVs' />
+                    <img src={longImg} alt='visual for the mood' className='imgVs' />
                     <h3>About Us</h3>
                     <h2 className='sloganTxt'>DISCOVER YOUR BEST SKIN YET</h2>
                     <p className='greenWriting'>Our company is a natural cosmetics brand that is committed to using only the finest natural ingredients in our products. We specialize in serums and oils that are designed to nourish and enhance your skin's natural beauty. We also offer multi-purpose creams that provide all-around skincare benefits.</p>

@@ -7,7 +7,7 @@ function About() {
     const textRef = useRef(null);
     const imgRef = useRef(null);
     const imgSmallRef = useRef(null);
-    const titleRef = useRef(null); // Ref for the title
+    const titleRef = useRef(null);
 
     useEffect(() => {
         const tl = gsap.timeline();

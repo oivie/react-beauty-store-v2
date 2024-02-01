@@ -8,7 +8,7 @@ import About from './About';
 import Footer from './Footer';
 
 function App() {
-  const navRef = useRef(null); // Add this line
+  const navRef = useRef(null); 
 
   useEffect(() => {
     // Ensure the initial state before the animation starts
@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <Router>
-        <nav ref={navRef} className='container'> {/* Add the ref here */}
+        <nav ref={navRef} className='container'> 
           <Link to='/main' className='link'>Main</Link>
           <Link to='/catalogue' className='link'>Catalogue</Link>
           <Link to='/about' className='link'>About Us</Link>
