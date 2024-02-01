@@ -22,8 +22,8 @@ function CatItemsShow({ anyItem }) {
                         <div className="containerCat">
                             <img src={image} className="imgCat" alt="catalogue items" />
                         </div>
-                        <div className="txtCat containerCat">
-                            <p>{name}</p>
+                        <div className="containerCat">
+                            <p className="txtCat">{name}</p>
                         </div>
                         <div className="containerCat">
                             <p>{info}</p>
