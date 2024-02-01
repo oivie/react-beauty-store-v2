@@ -23,7 +23,11 @@ body {
 .banner {
   position: absolute;
   margin-left: 8vh;
+  padding: 0 10px 0 10px ;
+  backdrop-filter: blur(10px); /* Or as needed */
+  background-color: rgba(252, 249, 242, 0..05); /* Semi-transparent white for light blur */
 }
+
 
 /* --------TEXT------- */
 h1, 
@@ -36,12 +40,16 @@ h4 {
 }
 
 .extraBigTxt {
-  font-size: 5vh;
+  font-size: 11vh;
   font-family: 'Poppins', sans-serif;
 }
 
 h3 {
   font-size: 2.4vh;
+}
+
+.sloganTxt {
+  font-size: 5.4vh;
 }
 
 .goTo {
@@ -59,6 +67,7 @@ h3 {
   text-decoration: none;
   margin-left: 3vh;
   font-family: 'Poppins', sans-serif;
+  visibility: hidden;
 }
 
 
@@ -91,11 +100,15 @@ h3 {
 
 /* --------imgs------- */
 .imgVs {
-  width: 100%;
-  border-radius: 5px;
+  width: 100%; 
+  /* height: 35vh;  */
+  border-radius: 35px;
+  object-fit: cover; /* This will cover the area without stretching the image */
+  object-position: center; 
 }
 
 /* --------newInn------- */
+
 .newInn {
   display: flex;
   justify-content: space-around;
@@ -106,7 +119,7 @@ h3 {
 .newInnContainer {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  /* width: 95%; */
 }
 
 .moreLessBtn {
@@ -116,6 +129,7 @@ h3 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2vh;
   color: #384837;
+  text-shadow: 1px 1px 2px rgba(129, 227, 120, 0.5); 
 }
 
 .newInnTxt {
@@ -286,5 +300,53 @@ h3 {
   flex-wrap: wrap;
   padding: 4vh;
 }
+
+/* Other styles */
+
+@media only screen and (max-width: 600px) {
+  h1, 
+  h3,
+  h2,
+  h4,
+  .newInnTxt {
+    font-size: 2vh;
+    text-align: center; 
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .extraBigTxt {
+    font-size: 3.6vh;
+    text-align: center; 
+  }
+
+  .sloganTxt{
+    font-size: 2.1vh;
+  }
+
+  .banner {
+    object-position: center; 
+    margin: 0.5vh;
+    margin-left: 0;
+  }
+
+  .link {
+    padding: 3px;
+  }
+
+  .newInnMobile {
+    width: 90%;
+  }
+
+  .greenSpace {
+    margin: 1vh;
+    width: 80%;
+    padding: 3vh;
+  }
+  
+}
+
 
 

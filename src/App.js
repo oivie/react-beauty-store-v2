@@ -1,22 +1,41 @@
+import React, { useRef, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import gsap from 'gsap';
 import Main from './Main';
 import Catalogue from './Catalogue';
 import About from './About';
 import Footer from './Footer';
 
 function App() {
+  const navRef = useRef(null); // Add this line
+
+  useEffect(() => {
+    // Ensure the initial state before the animation starts
+    gsap.set(navRef.current.children, { autoAlpha: 0, x: -100 });
+  
+    // Animate to the final state
+    gsap.to(navRef.current.children, {
+      duration: 0.5,
+      autoAlpha: 1, // End with fully opaque
+      x: 0, // End at their natural position
+      stagger: 0.1,
+      ease: "power1.out",
+    });
+  }, []);
+  
+
   return (
-    <div className="">
+    <div>
       <Router>
-        <nav className='container'>
+        <nav ref={navRef} className='container'> {/* Add the ref here */}
           <Link to='/main' className='link'>Main</Link>
           <Link to='/catalogue' className='link'>Catalogue</Link>
           <Link to='/about' className='link'>About Us</Link>
         </nav>
 
         <Routes>
-          <Route path='/' element={<Main />} /> {/* Catch-all route */}
+          <Route path='/' element={<Main />} />
           <Route path='/main' element={<Main />} />
           <Route path='/catalogue' element={<Catalogue />} />
           <Route path='/about' element={<About />} />
@@ -29,4 +48,3 @@ function App() {
 }
 
 export default App;
-

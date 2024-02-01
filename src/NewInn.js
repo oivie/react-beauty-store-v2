@@ -15,7 +15,7 @@ function NewInn({  }) {
     }
 
     return (
-        <div>
+        <div className='newInnMobile'>
             <p className='newInnTxt'>New products</p>
 
             <div className="newInn">
