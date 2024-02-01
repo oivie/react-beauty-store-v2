@@ -8,7 +8,7 @@ function CatItemsShow({ anyItem }) {
                 return (
                     <div key={ id } className='containerMainCat'>
                         <div className="containerCat">
-                            <img src={ image } className='imgCat'  />
+                            <img src={ image } className='imgCat' alt="catalogue items" />
                         </div>
 
                         <div className="txtCat containerCat">

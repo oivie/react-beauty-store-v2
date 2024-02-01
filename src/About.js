@@ -55,9 +55,9 @@ function About() {
 
 
 
-                    <img ref={imgRef} src={ ImageAbout0 } className='imgAbout' />
+                    <img ref={imgRef} src={ ImageAbout0 } className='imgAbout' img="bathing with soap" />
                 </div>
-                <img ref={imgSmallRef} src={ ImageAbout1 } className='imgAboutSm' />
+                <img ref={imgSmallRef} src={ ImageAbout1 } className='imgAboutSm' alt='women holding glass' />
 
             </div>
         </div>
