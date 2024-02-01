@@ -67,10 +67,38 @@ h3 {
   color: #ffff;
   text-decoration: none;
   margin-left: 3vh;
+  padding: 3px;
   font-family: 'Poppins', sans-serif;
-  visibility: hidden;
+  visibility: visible;
+  position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+  overflow: hidden; /* Ensures the pseudo-element is clipped to the link's bounds */
+  transition: color 0.3s ease;
 }
 
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color:#EEC8C8;
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  color: #EEC8C8;
+}
+
+.link:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+
+.activeLink {
+  color: #EEC8C8; 
+  font-weight: bold;
+}
 
 /* --------Green cont------- */
 .containerMainGreen {
@@ -122,6 +150,9 @@ h3 {
 .newInnContainer {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  width: 300px;
+  height: auto;
 }
 
 .moreLessBtn {
@@ -363,9 +394,6 @@ h3 {
     margin-left: 0;
   }
 
-  .link {
-    padding: 3px;
-  }
 
   /* .newInnMobile {
     width: 100%;

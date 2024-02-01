@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <Router>
-        <nav ref={navRef} className='container'> 
+        <nav ref={navRef} className='container'>
           <Link to='/main' className='link'>Main</Link>
           <Link to='/catalogue' className='link'>Catalogue</Link>
           <Link to='/about' className='link'>About Us</Link>
