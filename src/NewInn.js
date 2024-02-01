@@ -22,7 +22,7 @@ function NewInn({  }) {
                 { item.map(( element => {
                     const { id, name, description, images, showMore } = element;
                     return (
-                        <div key={ id } className='newInnContainer' >
+                        <div key={ id }>
                             <div className='newInnContainer'>
                                 <img className='newInnImg' src={ images } alt='pics for carousel' />
                             </div>

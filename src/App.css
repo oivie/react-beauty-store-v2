@@ -115,13 +115,13 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   margin: 5vh;
 }
 
 .newInnContainer {
   display: flex;
   flex-direction: column;
-  /* width: 95%; */
 }
 
 .moreLessBtn {
@@ -367,15 +367,22 @@ h3 {
     padding: 3px;
   }
 
-  .newInnMobile {
+  /* .newInnMobile {
     width: 100%;
-  }
+  } */
 
   .greenSpace {
     margin: 1vh;
     width: 80%;
     padding: 3vh;
   }
+
+  .newInnImg {
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
   
 }
 
