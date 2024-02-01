@@ -24,6 +24,7 @@ body {
   position: absolute;
   margin-left: 8vh;
   padding: 0 10px 0 10px ;
+  border-radius: 25px;
   backdrop-filter: blur(10px); /* Or as needed */
   background-color: rgba(252, 249, 242, 0..05); /* Semi-transparent white for light blur */
 }
