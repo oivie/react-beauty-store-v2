@@ -263,8 +263,9 @@ h3 {
 }
 
 .btnOne.active {
-  background-color: #EEC8C8; /* Dark pink color */
-  transform: scale(0.9);
+  background-color: #EEC8C8 !important; 
+  color: white !important;
+  transform: scale(0.9)!important;
 }
 
 .btnOne:hover,
