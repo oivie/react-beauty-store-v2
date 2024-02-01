@@ -192,6 +192,7 @@ h3 {
   background-color: #ffff;
   padding: 6vh;
   width: auto;
+  border-radius: 15px;
 }
 
 .aboutUsTxt {
@@ -221,7 +222,11 @@ h3 {
 
 .box1 {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  justify-content: space-between;
 }
+
 
 @media all and (max-width: 900px) {
   .containerMainAbout {
@@ -237,6 +242,9 @@ h3 {
     display: none;
   }
 
+  .aboutUsTxt p {
+    margin-bottom: 15px; 
+    }
 
 }
 
@@ -249,12 +257,20 @@ h3 {
   border: 1px black;
   font-family: 'Poppins', sans-serif;
   background-color: #F8EEE4;
+  transition: all 0.3s ease;
 }
 
-.btnOne:hover {
-  transition: all .6s ease-in;
-  background-color: #EEC8C8;
+.btnOne.active {
+  background-color: #EEC8C8; /* Dark pink color */
+  transform: scale(0.9);
 }
+
+.btnOne:hover,
+.btnOne.active {
+  background-color: #EEC8C8; 
+  color: white;
+}
+
 
 .h1Cat {
   color: #2D2D2D;
@@ -274,6 +290,7 @@ h3 {
 .txtCat {
   font-weight: bold;
   font-size: large;
+  color: #174714;
 }
 
 .price {
@@ -298,8 +315,19 @@ h3 {
 .containerCatalogue {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 4vh;
 }
+
+.catBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
 
 /* Other styles */
 
@@ -337,7 +365,7 @@ h3 {
   }
 
   .newInnMobile {
-    width: 90%;
+    width: 96%;
   }
 
   .greenSpace {

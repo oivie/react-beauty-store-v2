@@ -16,10 +16,10 @@ function App() {
   
     // Animate to the final state
     gsap.to(navRef.current.children, {
-      duration: 0.5,
+      duration: 1.5,
       autoAlpha: 1, // End with fully opaque
       x: 0, // End at their natural position
-      stagger: 0.1,
+      stagger: 0.2,
       ease: "power1.out",
     });
   }, []);
