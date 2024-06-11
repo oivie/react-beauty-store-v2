@@ -1,6 +1,8 @@
 # React Beauty Store
 
 A modern beauty store application built with React, featuring dynamic animations with GSAP and smooth navigation using React Router.
+![beauty-st-s](https://github.com/oivie/react-beauty-store-v2/assets/89459474/2b1dae18-38ed-41ee-b0cb-1a4d4ac0c8c7)
+
 
 ## Features
 
